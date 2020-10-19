@@ -21,10 +21,10 @@ function vendorPropName( name ) {
 
 // Return a potentially-mapped vendor prefixed property
 function finalPropName( name ) {
-	var final = vendorProps[ name ];
+	var prop = vendorProps[ name ];
 
-	if ( final ) {
-		return final;
+	if ( prop ) {
+		return prop;
 	}
 	if ( name in emptyStyle ) {
 		return name;
